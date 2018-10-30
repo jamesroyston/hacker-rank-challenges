@@ -1,1 +1,1 @@
-# hacker-rank-challenges
+# js-calculator
