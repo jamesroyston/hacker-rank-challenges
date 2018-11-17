@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>calc-vjs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+  <h1>--- a calculator ---<br> <span style="font-size: 2rem;">-- fcc --</span></h1>
+
+  <div>num1: <span id='num1'></span></div>
+  <div>num2: <span id='num2'></span></div>
+  <div>current total: <span id='total'></span></div>
+    <div id="container" class="container flex-grid">
+      <div class="display" id="display" value="display"></div>
+      <!-- <div class="button" id="before-calc" value="before-calc"></div> -->
+      <button class="btn col clear" type="button">C</button>
+      <button class="btn col orange" id="divide-btn" type="button">/</button>
+
+      <button class="btn col" id="7" type="button">7</button>
+      <button class="btn col" id="8" type="button">8</button>
+      <button class="btn col" id="9" type="button">9</button>
+      <button class="btn col orange" id="multiply-btn" type="button">*</button>
+
+      <button class="btn col" id="4" type="button">4</button>
+      <button class="btn col" id="5" type="button">5</button>
+      <button class="btn col" id="6" type="button">6</button>
+      <button class="btn col orange" id="subtract-btn" type="button">-</button>
+
+      <button class="btn col" id="1" type="button">1</button>
+      <button class="btn col" id="2" type="button">2</button>
+      <button class="btn col" id="3" type="button">3</button>
+      <button class="btn col orange" id="plus-btn" type="button">+</button>
+
+      <button class="btn col spec" id="0" type="button">0</button>
+      <button class="btn col spec" id="decimal-btn" type="button">.</button>
+      <button class="btn col orange equal" id="equal-btn" type="button">=</button>
+    </div>
+
+    <footer>
+      <div>
+        <p>Made with <span class="fa fa-heart"> &lt;3 </span> by jamesroyston</p>
+        <p><a href="https://www.github.com/jamesroyston/fcc-calculator">See the code</a></p>
+      </div>
+    </footer>
+    <script src="calculator.js"></script>
+  </body>
+</html>
