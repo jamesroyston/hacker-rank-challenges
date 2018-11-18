@@ -16,17 +16,17 @@ const logic = e => {
     // adding numbers to input
     handleNumber(btn);
     return;
-  } else if (btn === "*" || 
-             btn === "/" || 
-             btn === "+" || 
-             btn === "-") { 
+  } else if (btn === '*' || 
+             btn === '/' || 
+             btn === '+' || 
+             btn === '-') { 
     // if I press an operator, run handleOperator
     handleOperator(btn);
     return;
-  } else if (btn === "C") {
+  } else if (btn === 'C') {
     clearInputs();
     return;
-  } else if (btn === "=") {
+  } else if (btn === '=') {
     handleTotal();
     resetNum();
     operator = '';
@@ -59,7 +59,7 @@ function displayInputs(btn) {
   // debugger;
   if (display.innerHTML === '0') {
     display.innerHTML = btn;
-  } else if (display.innerHTML === num1 || total) {
+  } else if (display.innerHTML.length !== num1) {
     if (operator === '') {
       display.innerHTML = num1;
     } else {
@@ -70,10 +70,11 @@ function displayInputs(btn) {
 }         
 
 function clearInputs() {
-  display.innerHTML = "0";
+  display.innerHTML = '0';
   num1 = '';
   num2 = '';
   operator = '';
+  total = '';
 }
 
 function displayTotal() {
@@ -83,10 +84,10 @@ function displayTotal() {
 // actually do the math
 function handleTotal () {
   switch (operator) {
-    case "+": total = +num1 + (+num2); break;
-    case "-": total = +num1 - +num2; break;
-    case "/": total = +num1 / +num2; break;
-    case "*": total = +num1 * +num2; break;
+    case '+': total = +num1 + (+num2); break;
+    case '-': total = +num1 - +num2; break;
+    case '/': total = +num1 / +num2; break;
+    case '*': total = +num1 * +num2; break;
   }
   displayTotal();
 }
@@ -111,7 +112,7 @@ document.addEventListener('click', function() {
 
 
 // figure out how to choose number of decimals in parseFloat
-// 'C' --> display = "";
+// 'C' --> display = ;';
 // '.' adds '.' to display
 // alert an error if user tries to input two decimals
 // if display contains '.', alert error if clicked or do nothing
