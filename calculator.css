@@ -4,11 +4,13 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100vh;
   background-image: 
     linear-gradient(to bottom right, 
     rgb(60, 255, 60),
     rgb(0, 132, 255));
   background-size: cover;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: center;

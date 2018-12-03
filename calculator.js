@@ -84,11 +84,12 @@ function displayTotal() {
 // actually do the math
 function handleTotal () {
   switch (operator) {
-    case '+': total = +num1 + (+num2); break;
-    case '-': total = +num1 - +num2; break;
-    case '/': total = +num1 / +num2; break;
-    case '*': total = +num1 * +num2; break;
+    case '+': total = parseFloat(+num1) + parseFloat((+num2)); break;
+    case '-': total = parseFloat(+num1) - parseFloat(+num2); break;
+    case '/': total = parseFloat(+num1) / parseFloat(+num2); break;
+    case '*': total = parseFloat(+num1) * parseFloat(+num2); break;
   }
+  total = total.toFixed(2);
   displayTotal();
 }
 
@@ -100,15 +101,15 @@ function resetNum() {
 
 // displays num1, num2, and total for logic debugging
 
-const debug1 = document.querySelector('#num1');
-const debug2 = document.querySelector('#num2');
-const debugTot = document.querySelector('#total');
-document.addEventListener('click', function() {
-  debug1.innerHTML = num1;
-  debug2.innerHTML = num2;
-  debugTot.innerHTML = total;
+// const debug1 = document.querySelector('#num1');
+// const debug2 = document.querySelector('#num2');
+// const debugTot = document.querySelector('#total');
+// document.addEventListener('click', function() {
+//   debug1.innerHTML = num1;
+//   debug2.innerHTML = num2;
+//   debugTot.innerHTML = total;
 
-});
+// });
 
 
 // figure out how to choose number of decimals in parseFloat
