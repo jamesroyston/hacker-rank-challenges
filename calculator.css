@@ -7,8 +7,8 @@ body, html {
   min-height: 100vh;
   background-image: 
     linear-gradient(to bottom right, 
-    rgb(60, 255, 60),
-    rgb(0, 132, 255));
+    rgb(63, 63, 63),
+    rgb(131, 131, 131));
   background-size: cover;
   background-repeat: no-repeat;
 
