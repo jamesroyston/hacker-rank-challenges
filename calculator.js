@@ -1,7 +1,7 @@
 // define global variables for num1, num2, operator, total
-let num1 = ''; 
-let num2 = ''; 
-let operator = ''; 
+let num1 = '';
+let num2 = '';
+let operator = '';
 let total = '';
 
 const display = document.querySelector('.display');
