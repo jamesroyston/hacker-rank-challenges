@@ -7,8 +7,8 @@ body, html {
   min-height: 100vh;
   background-image: 
     linear-gradient(to bottom right, 
-    rgb(63, 63, 63),
-    rgb(131, 131, 131));
+    rgb(0, 40, 85),
+    rgb(167, 167, 167));
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@ body, html {
 
 h1 {
   font-family: 'Permanent Marker', cursive;
-  color: black;
+  color: rgb(196, 196, 196);
   text-align: center;
   font-size: 3rem;
   justify-content: center;
